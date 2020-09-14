@@ -1,0 +1,33 @@
+{
+  "name": "next-tailwind-starter",
+  "version": "1.0.0",
+  "description": "",
+  "author": "poports",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "^5.2.0",
+    "twin.macro": "^1.9.0"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "tailwind.config.js",
+      "preset": "styled-components",
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  }
+}
